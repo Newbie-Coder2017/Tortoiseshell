@@ -123,7 +123,8 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: azure;
-  color: black height: 9.5rem;
+  color: black;
+  height: 9.5rem;
 }
 
 footer img {
