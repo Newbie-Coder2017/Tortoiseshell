@@ -126,6 +126,9 @@ footer img {
   width: auto;
 }
 
+
+/*RESPONSIVE ADAPTATION styling*/
+
 @media only screen and (min-width: 500px) {
   h4 {
     display: inline-flex;
