@@ -26,6 +26,11 @@ header {
   background-color: CadetBlue;
 }
 
+#company {
+  display: flex;
+  align-items: center;
+}
+
 #navbar img {
   padding-right: 1rem;
   max-height: 1.5rem;
