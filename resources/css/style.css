@@ -71,16 +71,15 @@ h1 {
 
 #services {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   margin: 3.77rem auto;
 }
 
 figure {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
   width: 5rem;
   text-align: center;
@@ -88,7 +87,9 @@ figure {
 
 figure img {
   width: 3.5rem;
+  flex-grow: 1;
   height: auto;
+  align-self: flex-end;
 }
 
 figcaption, p {
@@ -97,6 +98,7 @@ figcaption, p {
 
 figcaption {
   margin: 1.54rem auto;
+  align-self: flex-end;
 }
 
 #products>h2, #contact>h2 {
@@ -144,10 +146,10 @@ footer img {
   }
   #services {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;
+    flex-flow: row wrap;
     margin: 3rem auto;
+    justify-content: center;
+    align-items: stretch;
   }
   figure {
     margin: 0 3rem;
@@ -166,17 +168,14 @@ footer img {
     padding: 0.5rem 1.25rem;
     width: initial;
   }
+  figure {
+    min-height: 8rem;
+  }
   footer {
     justify-content: flex-start;
   }
-  figure {
-    height: 8rem;
-  }
   figcaption, p {
     font-size: 1rem;
-  }
-  figcaption {
-    margin: 0;
   }
   #products, #contact {
     width: 35%;
